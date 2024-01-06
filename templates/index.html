@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop File Upload</title>
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- <div
+        <textarea>Please enter filename</textarea>
+    </div> -->
+    <h1>QC Automation and Author Script</h1>
+    <div id="drop-area">
+        <p>Drag and drop a text file here or click to select one.</p>
+        <input type="file" id="file-input">
+        <button id="upload-btn" class="upload-btn">Upload File</button>
+    </div>
+    <div id='fileNames'></div>
+    <div class="normal">
+        <button id="run-qc" class="upload-btn">Run QC Script</button>
+        <button id="run-author" class="upload-btn">Run Author Script</button>
+        <button id="empty-file" class="upload-btn" >Remove Uploaded files</button>
+    </div>
+
+    <div class="content-area">
+        <textarea id="qc-comments" class="comments"> QC comments will be reflected here</textarea>        
+    </div>
+    <hr>
+    <div class="content-area">
+        <textarea id="sponsors" class="comments">Sponsors Comments will be reflected here</textarea>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

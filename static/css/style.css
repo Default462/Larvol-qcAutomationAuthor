@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+#drop-area {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.content-area {
+    border: 2px dotted #000;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.comments{
+    width: 80%;
+}
+#file-input {
+    display: none;
+}
+.upload-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;            
+}
+.normal {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5px;
+}
+hr {
+    border: none;
+    height: 3px; /* Adjust the thickness as needed */
+    background-color: #000; /* Set the color of the line */
+    border-bottom: 3px dotted #000; /* Set the dotted style and color */
+    margin: 20px 0; /* Adjust margin as needed */
+}
+
+h1{
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;            
+}
